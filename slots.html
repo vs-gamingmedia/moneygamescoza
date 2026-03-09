@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Slots - MoneyGames</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div id="header"></div>
+    
+    <section class="section">
+        <div class="container">
+            <div class="sec-label">Games Library</div>
+            <h2 class="sec-title">PREMIUM SLOTS</h2>
+            <p class="sec-desc">Browse our curated selection of the best slots from top providers. Filter by category or search for your favorite title.</p>
+            
+            <div style="display: flex; gap: 12px; margin-bottom: 32px; flex-wrap: wrap;">
+                <input type="text" id="game-search" placeholder="Search games..." style="background: var(--bg3); border: 1px solid var(--border); color: var(--text); padding: 10px 16px; border-radius: 8px; flex: 1; min-width: 200px;">
+                <select id="category-filter" style="background: var(--bg3); border: 1px solid var(--border); color: var(--text); padding: 10px 16px; border-radius: 8px;">
+                    <option value="">All Categories</option>
+                    <option value="Slots">Slots</option>
+                    <option value="Live Casino">Live Casino</option>
+                    <option value="Crash">Crash</option>
+                    <option value="Table Games">Table Games</option>
+                </select>
+                <select id="provider-filter" style="background: var(--bg3); border: 1px solid var(--border); color: var(--text); padding: 10px 16px; border-radius: 8px;">
+                    <option value="">All Providers</option>
+                </select>
+                <select id="sort-filter" style="background: var(--bg3); border: 1px solid var(--border); color: var(--text); padding: 10px 16px; border-radius: 8px;">
+                    <option value="latest">Newest First</option>
+                    <option value="a-z">Name A-Z</option>
+                    <option value="z-a">Name Z-A</option>
+                </select>
+            </div>
+
+            <div class="slot-grid" id="slot-grid">
+                <!-- Games will be injected here -->
+            </div>
+            
+            <div id="loading" style="text-align: center; padding: 40px; display: none;">
+                <div style="color: var(--gold); font-family: 'DM Mono', monospace;">LOADING GAMES...</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script type="module" src="/src/pages/slots.ts"></script>
+</body>
+</html>

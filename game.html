@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Details - MoneyGames</title>
+    <link rel="stylesheet" href="/src/index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:wght@400;500&family=DM+Sans:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="dark">
+    <div id="header"></div>
+    
+    <section class="section" id="game-details">
+        <div class="container" id="game-content">
+            <!-- Game content will be injected here -->
+            <div id="loading" style="text-align: center; padding: 100px;">
+                <div style="color: var(--gold); font-family: 'DM Mono', monospace;">LOADING GAME DATA...</div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-alt">
+        <div class="container">
+            <div class="sec-label">Related</div>
+            <h2 class="sec-title">SIMILAR GAMES</h2>
+            <div class="slot-grid" id="related-grid">
+                <!-- Related games will be injected here -->
+            </div>
+        </div>
+    </section>
+
+    <div id="footer"></div>
+    <script type="module" src="/src/pages/game.ts"></script>
+</body>
+</html>
